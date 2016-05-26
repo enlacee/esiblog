@@ -1,5 +1,160 @@
 /*
 */
-.anibal{
-	color:red;
+.debug{
+	border:1px solid red;
+}
+/* variables */
+$graylight: #d5d5d5;
+
+body {
+	background-color: #fff;
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
+.clear{
+	clear:both;
+	height:1px;
+	margin:0;
+	padding:0;
+	font-size:1px;
+	line-height:0
+}
+.clearfix:after{
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+
+/* custom */
+.inner{
+	max-width: 1003px;
+	margin:0 auto;
+}
+
+/**********************************************************
+* HEADER
+***********************************************************/
+header .header-social {
+	ul{
+		/*width: 200px;*/
+		float: right;
+		margin-top:14px;
+	}
+	ul li {
+		display: inline;
+		margin: 0 6px;
+	}
+}
+.header-logo{
+	text-align: center;
+}
+nav .header-menu{
+	display: block;
+	float: left;
+	text-align: right;
+	ul li {
+		display: inline;
+		font-size: 13px;
+		margin: 0 19px;
+		line-height: 36px;
+	}
+}
+nav .header-menu-find{
+	display: block;
+	float: left;
+	border: 1px solid $graylight;;
+	form input {
+		border: 0px solid transparent;
+		float:left;
+		padding: 0 3px;
+		margin: 0;
+		height: 29px;
+	}
+	form input:focus {
+		outline: 0;
+	}
+	form span.searchgrayLine{
+		margin-top: 12px;
+	}
+	form button {
+		background-color: transparent;
+		border: 0px solid transparent;
+		margin-top: 5px;
+		width: 30px;
+	    height: 23px;
+
+		span{
+			// line-height: 12px;
+		}
+	}
+}
+
+
+/**********************************************************
+* SPRITES
+***********************************************************/
+.spt1 {
+	background-image: url('../images/sprite-esika.png');
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+.spt1.logo{
+	background-position: 0px 0px;
+	height: 85px;
+	width: 283px;
+}
+.spt1.fb{
+	background-position: 0px -85px;
+	height: 12px;
+	width: 16px;
+}
+.spt1.tw{
+	background-position: -16px -85px;
+	height: 12px;
+	width: 16px;
+}
+.spt1.in{
+	background-position: -32px -85px;
+	height: 12px;
+	width: 16px;
+}
+.spt1.yt{
+	background-position: -48px -85px;
+	height: 12px;
+	width: 16px;
+}
+.spt1.fbgray{
+	background-position: -96px -85px;
+	height: 12px;
+	width: 16px;
+}
+.spt1.twgray{
+	background-position: -112px -85px;
+	height: 12px;
+	width: 16px;
+}
+.spt1.ingray{
+	background-position: -128px -85px;
+	height: 12px;
+	width: 16px;
+}
+.spt1.ytgray{
+	background-position: -144px -85px;
+	height: 12px;
+	width: 16px;
+}
+
+.spt1.searchgray{
+	background-position: -194px -85px;
+	height: 12px;
+	width: 16px;
+}
+.spt1.searchgrayLine{
+	background-position: -192px -85px;
+	height: 11px;
+	width: 1px;
 }
