@@ -11,6 +11,13 @@ ul {
   padding: 0;
   margin: 0; }
 
+ul.list-inline li {
+  display: inline; }
+
+.container, .container-fluid {
+  padding: 0;
+  margin: 0; }
+
 .clear {
   clear: both;
   height: 1px;
@@ -26,6 +33,9 @@ ul {
   clear: both;
   visibility: hidden; }
 
+.img100 {
+  width: 100%; }
+
 /* custom */
 .inner {
   max-width: 1003px;
@@ -37,7 +47,8 @@ ul {
 header .header-social ul {
   /*width: 200px;*/
   float: right;
-  margin-top: 14px; }
+  margin-top: 14px;
+  margin-right: 21px; }
 
 header .header-social ul li {
   display: inline;
@@ -49,23 +60,28 @@ header .header-social ul li {
 nav .header-menu {
   display: block;
   float: left;
-  text-align: right; }
+  text-align: right;
+  height: 50px; }
   nav .header-menu ul li {
     display: inline;
     font-size: 13px;
     margin: 0 19px;
     line-height: 36px; }
+    nav .header-menu ul li a {
+      text-decoration: none; }
 
 nav .header-menu-find {
   display: block;
-  float: left;
+  float: right;
   border: 1px solid #d5d5d5; }
   nav .header-menu-find form input {
     border: 0px solid transparent;
     float: left;
-    padding: 0 3px;
+    height: 29px;
+    float: left;
+    padding: 0 7px;
     margin: 0;
-    height: 29px; }
+    margin-top: 4px; }
   nav .header-menu-find form input:focus {
     outline: 0; }
   nav .header-menu-find form span.searchgrayLine {
@@ -73,9 +89,33 @@ nav .header-menu-find {
   nav .header-menu-find form button {
     background-color: transparent;
     border: 0px solid transparent;
-    margin-top: 5px;
+    margin-top: 10px;
     width: 30px;
     height: 23px; }
+    nav .header-menu-find form button span {
+      margin-left: 4px; }
+
+.featured_home_box img {
+  width: 100%; }
+
+/**********************************************************
+* FOOTER
+***********************************************************/
+.footer-box-gray {
+  background-color: #ebebeb; }
+
+.footer-box-black {
+  background-color: black; }
+
+.footer-box-black-content {
+  text-align: center;
+  max-width: 725px;
+  margin: 0 auto;
+  color: #999;
+  font-family: BentonSans;
+  font-size: 11px;
+  font-weight: 300;
+  padding: 50px 0 30px 0; }
 
 /**********************************************************
 * SPRITES
@@ -133,9 +173,14 @@ nav .header-menu-find {
 .spt1.searchgray {
   background-position: -194px -85px;
   height: 12px;
-  width: 16px; }
+  width: 14px; }
 
 .spt1.searchgrayLine {
   background-position: -192px -85px;
   height: 11px;
   width: 1px; }
+
+.spt1.logoEsikagray {
+  background-position: 0px -97px;
+  height: 35px;
+  width: 86px; }
