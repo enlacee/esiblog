@@ -22,9 +22,14 @@ ul {
 ul.list-inline li {
 	display: inline;
 }
+/* reset bootstrap */
 .container, .container-fluid{
 	padding:0;
 	margin:0;
+}
+.nopadding {
+	padding: 0 !important;
+	margin: 0 !important;
 }
 .clear{
 	clear:both;
@@ -48,6 +53,7 @@ ul.list-inline li {
 .inner{
 	max-width: 1003px;
 	margin:0 auto;
+	border:1px solid blue;
 }
 /**********************************************************
 * FONTS
@@ -220,8 +226,9 @@ nav .header-menu-find{
 	}
 	p.author{
 		color: #666;
-		font-family: Arial;;
-		a[rel=author]{
+		font-family: Arial;
+		font-size: 12px;
+		span[rel=author]{
 			color: black;
 			font-weight: 700;
 			font-style: italic;
@@ -230,10 +237,11 @@ nav .header-menu-find{
 		}
 	}
 	p.mini-description{
-		margin: 0px 17em;
+		padding: 0px 17%;
 		line-height: 2.2em;
 		color: black;
-		font-size: 14px;;
+		font-size: 14px;
+		text-align: justify;
 	}
 	div.share-post{
 		margin-top: 27px;
@@ -258,13 +266,35 @@ nav .header-menu-find{
 	position: absolute;
     margin-top: -100px;
 }
-.bg-content-head{
-
-}
 .bg-content{
 	background-image: url('../images/bg-content.png');
 	background-size: 100% auto;
 	background-repeat: repeat-y;
+}
+.featured-home-box-mini{
+	text-align: center;
+	h2{
+		font-size: 18px;
+		line-height: 24px;
+	}
+	.featured-description p.mini-description{
+		padding: 0px 2%;
+		text-align: justify;
+	}
+	.featured-description div.share-post{
+		margin-bottom: 23px;
+	}
+	.featured-description p.mini-description{
+		font-size: 12px;
+	}
+}
+.box-min-left{
+	margin: 0;
+	padding: 0 9px 0 0;
+}
+.box-min-right{
+	margin: 0;
+	padding: 0 0 0 9px;
 }
 /**********************************************************
 * FOOTER
