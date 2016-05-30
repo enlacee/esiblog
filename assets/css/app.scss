@@ -356,14 +356,16 @@ nav .header-menu-find{
 		width: 7px;
 		height: 11px;
 		float: right;
-		margin: 2px 0 0 20px;
+		margin: 2px 0 0 20px;;
+
 	}
 }
 /**********************************************************
 * FOOTER
 ***********************************************************/
 .footer-box-gray{
-	background-color: $graylight2;
+	// background-color: $graylight2;
+	background-image: url('../images/bg-footer.jpg');
 }
 .footer-box-black{
 	background-color: black;
@@ -401,6 +403,19 @@ nav .header-menu-find{
 		font-weight: normal;
 		color: black;
 	}
+}
+.title-instagram{
+	width: 200px;
+	margin: 0 auto;
+	background: white;
+	text-align: center;
+	font-size: 18px;
+	font-family: 'Times New Roman';
+	padding: 15px 33px;
+	position: relative;
+	top: 55px;
+	font-weight: 600;
+	color: black;;
 }
 /**********************************************************
 * SPRITES

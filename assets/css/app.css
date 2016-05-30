@@ -311,7 +311,7 @@ nav .header-menu-find {
 * FOOTER
 ***********************************************************/
 .footer-box-gray {
-  background-color: #ebebeb; }
+  background-image: url("../images/bg-footer.jpg"); }
 
 .footer-box-black {
   background-color: black; }
@@ -345,6 +345,19 @@ nav .header-menu-find {
     margin-top: 10px;
     font-weight: normal;
     color: black; }
+
+.title-instagram {
+  width: 200px;
+  margin: 0 auto;
+  background: white;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Times New Roman';
+  padding: 15px 33px;
+  position: relative;
+  top: 55px;
+  font-weight: 600;
+  color: black; }
 
 /**********************************************************
 * SPRITES
