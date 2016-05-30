@@ -131,7 +131,7 @@ nav .header-menu {
   display: block;
   float: left;
   text-align: right;
-  height: 50px;
+  min-height: 50px;
   width: 72%; }
   nav .header-menu ul li {
     display: inline;
@@ -467,3 +467,7 @@ nav .header-menu-find {
   margin-bottom: -1px;
   margin-left: 1em;
   margin-right: 1em; }
+
+/**********************************************************
+* MOBILE
+***********************************************************/
