@@ -122,7 +122,7 @@ header .header-social ul {
 
 header .header-social ul li {
   display: inline;
-  margin: 0 6px; }
+  margin: 0 3px; }
 
 .header-logo {
   text-align: center; }
@@ -185,10 +185,11 @@ nav .header-menu-find {
   margin-top: 16px; }
   .featured-description p.category {
     font-family: 'CorradineHandwriting';
-    font-size: 24px; }
+    font-size: 24px;
+    color: #666; }
   .featured-description h2 {
     color: black;
-    font-family: 'BentonSans';
+    font-family: 'BentonSans-Bold';
     font-size: 24px;
     font-weight: 700;
     margin-top: 0px; }
@@ -203,10 +204,10 @@ nav .header-menu-find {
       cursor: default;
       text-decoration: none; }
   .featured-description p.mini-description {
-    padding: 0px 17%;
+    padding: 0px 23%;
     line-height: 2.2em;
     color: black;
-    font-size: 14px;
+    font-size: 13px;
     text-align: justify; }
   .featured-description div.share-post {
     margin-top: 27px;
@@ -229,22 +230,24 @@ nav .header-menu-find {
   margin-top: -100px; }
 
 .bg-content {
-  background-image: url("../images/bg-content.png");
+  background-image: url("../images/bg-content.jpg");
   background-size: 100% auto;
-  background-repeat: repeat-y; }
+  background-repeat: no-repeat; }
 
 .featured-home-box-mini {
   text-align: center; }
   .featured-home-box-mini h2 {
     font-size: 18px;
-    line-height: 24px; }
+    line-height: 24px;
+    padding: 0 12%; }
   .featured-home-box-mini .featured-description p.mini-description {
     padding: 0px 2%;
     text-align: justify; }
   .featured-home-box-mini .featured-description div.share-post {
     margin-bottom: 23px; }
   .featured-home-box-mini .featured-description p.mini-description {
-    font-size: 12px; }
+    font-size: 13px;
+    padding: 0 5%; }
 
 .box-min-left {
   margin: 0;
@@ -276,12 +279,12 @@ nav .header-menu-find {
       color: black; }
   .paginator .btn-prev, .paginator .btn-next {
     color: white;
-    font-family: 'BentonSans';
+    font-family: 'BentonSans-Medium';
     font-weight: 500;
     font-size: 12px;
     background-color: #b3b3b3;
     border: 0;
-    padding: 15px 25px; }
+    padding: 10px 25px; }
   .paginator .btn-prev:before {
     content: "";
     background: url("../images/sprite-esika.png");
@@ -326,7 +329,7 @@ nav .header-menu-find {
   padding: 50px 0 30px 0; }
 
 .most-view {
-  padding: 1.5% 1% 3% 1%;
+  padding: 1.5% 1% 0% 1%;
   text-align: center; }
   .most-view ul li {
     display: block; }
@@ -354,7 +357,7 @@ nav .header-menu-find {
   font-family: 'Times New Roman';
   padding: 15px 33px;
   position: relative;
-  top: 55px;
+  top: 28px;
   font-weight: 600;
   color: black; }
 
