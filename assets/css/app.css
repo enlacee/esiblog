@@ -52,6 +52,9 @@ ul.list-inline li {
   margin: 0 auto;
   border: 1px solid blue; }
 
+.bg-white {
+  background-color: white; }
+
 /**********************************************************
 * FONTS
 ***********************************************************/
@@ -220,7 +223,7 @@ nav .header-menu-find {
 .featured-home-box {
   text-align: center; }
   .featured-home-box .featured-image {
-    min-height: 600px; }
+    /*min-height: 600px;*/ }
 
 .ico-arrow {
   position: absolute;
@@ -252,6 +255,57 @@ nav .header-menu-find {
   margin: 0;
   padding: 0 0 0 9px; }
 
+.paginator {
+  background-color: white;
+  padding: 4.5% 0 4.5% 0;
+  margin: 0; }
+  .paginator .counter {
+    text-align: center;
+    color: #a5a5a5;
+    font-family: 'BentonSans';
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 15px 0 0 0; }
+    .paginator .counter ul li {
+      padding: 0 14px;
+      margin: 0; }
+    .paginator .counter ul li a {
+      color: #a5a5a5; }
+    .paginator .counter ul li a.active {
+      color: black; }
+  .paginator .btn-prev, .paginator .btn-next {
+    color: white;
+    font-family: 'BentonSans';
+    font-weight: 500;
+    font-size: 12px;
+    background-color: #b3b3b3;
+    border: 0;
+    padding: 15px 25px; }
+  .paginator .btn-prev:before {
+    content: "";
+    background: url("../images/sprite-esika.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position: -210px -85px;
+    width: 7px;
+    height: 11px;
+    float: left;
+    margin: 2px 20px 0 0; }
+  .paginator .btn-next {
+    background-color: black;
+    float: right; }
+  .paginator .btn-next::after {
+    content: "";
+    background: url("../images/sprite-esika.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position: -217px -85px;
+    width: 7px;
+    height: 11px;
+    float: right;
+    margin: 2px 0 0 20px; }
+
 /**********************************************************
 * FOOTER
 ***********************************************************/
@@ -270,6 +324,24 @@ nav .header-menu-find {
   font-size: 11px;
   font-weight: 300;
   padding: 50px 0 30px 0; }
+
+.most-view {
+  padding: 0 1%;
+  border: 1px solid green;
+  text-align: center; }
+  .most-view ul li {
+    display: block; }
+  .most-view h2 {
+    font-family: 'BentonSans';
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 2.1%;
+    text-align: left; }
+  .most-view h3 {
+    font-size: 13px;
+    font-weight: 800;
+    text-align: left;
+    padding-left: 10%; }
 
 /**********************************************************
 * SPRITES
