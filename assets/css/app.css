@@ -49,8 +49,7 @@ ul.list-inline li {
 /* custom */
 .inner {
   max-width: 1003px;
-  margin: 0 auto;
-  border: 1px solid blue; }
+  margin: 0 auto; }
 
 .bg-white {
   background-color: white; }

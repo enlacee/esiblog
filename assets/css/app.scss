@@ -53,7 +53,6 @@ ul.list-inline li {
 .inner{
 	max-width: 1003px;
 	margin:0 auto;
-	border:1px solid blue;
 }
 .bg-white{
 	background-color: white;
@@ -273,6 +272,10 @@ nav .header-menu-find{
 	background-image: url('../images/bg-content.png');
 	background-size: 100% auto;
 	background-repeat: repeat-y;
+
+	// background-image: url('../images/bg-content.png'), url('../images/bg-content.png'), url('../images/bg-content.png');
+	// background-repeat: no-repeat, no-repeat, no-repeat;
+	// background-position: 0 top, 0 top, 0 top;
 }
 .featured-home-box-mini{
 	text-align: center;
