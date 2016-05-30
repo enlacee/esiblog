@@ -310,6 +310,22 @@ nav .header-menu-find {
     margin: 2px 0 0 20px; }
 
 /**********************************************************
+* PARALLAX
+***********************************************************/
+.parallax {
+  height: 500px;
+  background-position: top -72% center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.parallax-1 {
+  background-image: url("../images/slides/home/home.png"); }
+
+/**********************************************************
 * FOOTER
 ***********************************************************/
 .footer-box-gray {
