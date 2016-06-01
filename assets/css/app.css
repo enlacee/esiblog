@@ -162,8 +162,7 @@ nav .header-menu-find {
     height: 29px;
     float: left;
     padding: 0 7px;
-    margin: 0;
-    margin-top: 4px; }
+    margin: 0; }
   nav .header-menu-find form input:focus {
     outline: 0; }
   nav .header-menu-find form span.searchgrayLine {
@@ -312,18 +311,20 @@ nav .header-menu-find {
 /**********************************************************
 * PARALLAX
 ***********************************************************/
-.parallax {
-  height: 500px;
-  background-position: top -72% center;
+.parallax-1 {
+  background-image: url("../images/slides/home/home.png");
   background-repeat: no-repeat;
+  background-position: top !important;
   background-attachment: fixed;
+  min-height: 500px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-
-.parallax-1 {
-  background-image: url("../images/slides/home/home.png"); }
 
 /**********************************************************
 * FOOTER
