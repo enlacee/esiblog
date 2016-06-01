@@ -545,3 +545,18 @@ nav .header-menu-find{
 /**********************************************************
 * MOBILE
 ***********************************************************/
+@media screen and(min-width: 780px) and (max-width: 1024px){
+	.wrapper{
+		background: yellow;
+	}
+}
+@media screen and(min-width: 480px) and (max-width: 780px){
+	.wrapper{
+		background: red;
+	}
+}
+@media screen and(max-width: 480px){
+	.wrapper{
+		background: blue;;
+	}
+}
