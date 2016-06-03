@@ -439,26 +439,43 @@ nav .header-menu-find{
 		color:black;
 	}
 	h3{
+		font-family: 'BentonSans';
 		font-size: 13px;
+		font-weight: bold;
 		text-align: left;
 		padding-left: 10%;
 		margin-top: 10px;
 		font-weight: normal;
 		color: black;
+		max-width: 250px;
+		height: 40px;
 	}
 }
-.title-instagram{
-	width: 200px;
-	margin: 0 auto;
-	background: white;
-	text-align: center;
-	font-size: 18px;
-	font-family: 'Times New Roman';
-	padding: 15px 33px;
-	position: relative;
-	top: 28px;
-	font-weight: 600;
-	color: black;;
+.footer-instagram{
+	width: 100%;
+	overflow: hidden;
+	.title-instagram{
+		width: 200px;
+		margin: 0 auto;
+		background: white;
+		text-align: center;
+		font-size: 18px;
+		font-family: 'Times New Roman';
+		padding: 15px 33px;
+		position: relative;
+		top: 28px;
+		font-weight: 600;
+		color: black;;
+	}
+	.image-list-instagram{
+		width: 120%;
+		height: 160px;
+		overflow: hidden;
+		ul li{
+			display: inline;
+			float: left
+		}
+	}
 }
 .slide-mobile{
 	.next, .prev{
@@ -557,6 +574,16 @@ nav .header-menu-find{
 	margin-left: 1em;
 	margin-right: 1em;
 }
+.spt1.arrowRight1{
+	background-position: -206px -97px;
+	width: 13px;
+	height: 23px;
+}
+.spt1.arrowLeft1{
+	background-position: -193px -97px;
+	width: 13px;
+	height: 23px;
+}
 /**********************************************************
 * MOBILE
 ***********************************************************/
@@ -601,9 +628,10 @@ nav .header-menu-find{
 	}
 }
 .logo-mobile{
-	width: 100%;
 	text-align: center;
 	z-index: 1;
+	float: left;
+	width: 100%;
 	.spt1.logo{
 		background-size: 66%;
 		margin: 4px 0;
@@ -613,8 +641,19 @@ nav .header-menu-find{
 		margin: 4px 0;
 		height: 56px;
 	}
+	.logoHidden2{
+		display: none;
+		width: 60%;
+		float: right;
+		margin-right: 75px;
+	}
 }
+.logo-dot{
+	position: absolute;
+	right: 0;
+	float: right;
 
+}
 /**********************************************************
 * MOBILE RESPONSIVE
 ***********************************************************/
@@ -625,22 +664,21 @@ nav .header-menu-find{
 	.header-menu-mobile{
 		display: block;
 	}
-	.wrapper{
-		background: yellow;
-	}
 }
 @media screen and(min-width: 780px) and (max-width: 1024px){
 
 }
 @media screen and(min-width: 480px) and (max-width: 780px){
-	.wrapper{
-		background: red;
+	/*
+	* BODY
+	*/
+	.body-background-mobile{
+		.box-min-left, .box-min-right{
+			padding: 0;
+		}
 	}
 }
 @media screen and(max-width: 480px){
-	.wrapper{
-		background: white;;
-	}
 	.bg-content{
 		background-color: white;
 		background-image: initial;
@@ -648,27 +686,36 @@ nav .header-menu-find{
 	.featured-description p.mini-description{
 		padding: 0px 8%;
 	}
+
 	/**
 	* Menu
 	*/
 	.logo-mobile{
 		position: absolute;
 		top: 13px;
+		.logoHidden2{
+			display: block;
+		}
+		.logoHidden1{
+			display: none;
+		}
 	}
 	.header-menu-mobile{
-		height: 122px;
+		height: 88px;
 
 	}
 	.logo-mobile .spt1.logo{
-		background-size: initial;
+		// background-size: initial;
 	}
 	.button-menu{
-		margin-top: 2.6em;
-		.button-menu .line{
-			height: 5px;
+		// margin-top: 2.6em;
+		margin-top: 38.6%;
+		.line{
+			width: 85%;
+			height: 4px;
+			margin-top: 7px;
 		}
 	}
-
 	/*
 	* HEADER
 	*/
@@ -724,7 +771,6 @@ nav .header-menu-find{
 			padding: 0 0 1.5em 0;
 		}
 	}
-
 	.paginator{
 		.btn-next::after{
 			margin-left: 5px;
@@ -737,13 +783,93 @@ nav .header-menu-find{
 	* FOOTER
 	*/
 	.slide-mobile{
+		text-align: center;
+		position: relative;
+		div{
+			display: inline-block;
+			width: 100%;
+			img{
+				width: 86.6%;
+			}
+		}
 		.next, .prev{
 			display: block;
+			position: absolute;
+			background-color:white;
+			border: 0px solid transparent;
+			// width: 50px;
+			// height: 50px;
+			padding: 15px 19px;
+			top: 28%;
+			z-index: 1;
+		}
+		.next {
+			right: 5px;
+		}
+		.prev {
+
+			left: 5px;
+		}
+		.prev:after{
+			content: "";
+			background-image: url('../images/sprite-esika.png');
+			background-repeat: no-repeat;
+			display: inline-block;
+			background-position: -193px -97px;
+			width: 13px;
+			height: 23px;
+			float: right;
+			margin: 0
+		}
+		.next:before{
+			content: "";
+			background-image: url('../images/sprite-esika.png');
+			background-repeat: no-repeat;
+			display: inline-block;
+			background-position: -206px -97px;
+			width: 13px;
+			height: 23px;
+			float: left;
+			margin: 0;
 		}
 	}
-
+	.most-view{
+		h2{
+			font-size: 16px;
+		}
+		h3{
+			font-size: 14px;
+			font-weight: bold;
+			text-align: center;
+			max-width: initial;
+			padding: 0;
+			margin-top: 25px;
+		}
+	}
+	.footer-instagram{
+		overflow: inherit;
+		.image-list-instagram{
+			overflow: inherit;
+			height: auto;
+			ul li{
+				display: block;
+				margin-right: 7px;
+				margin-bottom: 7px;
+				width: 41%;
+				img{
+					width: 98%;
+					// width: 120%;
+				}
+			}
+		}
+	}
+	.footer-box-black-content{
+		padding-bottom: 50px;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
 	/*
-	* sprites
+	* SPRITES *SOCIAL*
 	*/
 	.spt1.fb{
 		background-position: 0px -158px;
@@ -765,6 +891,4 @@ nav .header-menu-find{
 		height: 20px;
 		width: 24px;
 	}
-
-
 }

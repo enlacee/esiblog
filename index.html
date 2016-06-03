@@ -9,8 +9,12 @@
 	<div class="wrapper ">
 		<header>
 			<!-- MenuMobile -->
-			<div class="inner header-menu-mobile">
-				<div class="pull-right">
+			<div class="inner header-menu-mobile clearfix">
+				<div class="logo-mobile">
+					<a href="#" class="spt1 logo logoHidden1"></a>
+					<a href="#" class="logoHidden2"><img class="img-responsive" src="assets/images/logo.png"/></a>
+				</div>
+				<div class="logo-dot">
 					<button type="button" id="button-menu" class="button button-menu" onclick="mostrarMenuMobile()">
 						<span class="text-menu"></span>
 						<span class="line line-top "></span>
@@ -18,10 +22,6 @@
 						<span class="line line-bottom "></span>
 					</button>
 				</div>
-				<div class="logo-mobile">
-					<a href="#" class="spt1 logo"></a>
-				</div>
-
 			</div><!-- EndMenuMobile -->
 
 			<div class="inner header-menu">
@@ -230,45 +230,58 @@
 				<div class="inner most-view">
 					<h2>LOS MÁS VISTOS</h2>
 					<div class="row nopadding slide-mobile">
-						<span class="next">Next</span>
-						<span class="prev">Previous</span>
+						<button type="button" class="prev"></button>
+						<button type="button" class="next"></button>
 
-						<div class="col-md-3 nopadding">
+
+						<div class="col-md-3 col-sm-3 col-xs-12_ nopadding">
 							<a href="#">
 								<img src="assets/images/slides/home/layer-57.png" alt="" />
 							</a>
-							<h3>MAQUILLATE COMO UNA PROFESIONAL</h3>
+							<h3>MAQUILLATE COMO UNA PROFESIONAL 1</h3>
 						</div>
-						<div class="col-md-3 nopadding">
+						<div class="col-md-3 col-sm-3 col-xs-12_ nopadding">
 							<a href="#">
 								<img src="assets/images/slides/home/layer-57.png" alt="" />
 							</a>
-							<h3>MAQUILLATE COMO UNA PROFESIONAL</h3>
+							<h3>MAQUILLATE COMO UNA PROFESIONAL 3</h3>
 						</div>
-						<div class="col-md-3 nopadding">
+						<div class="col-md-3 col-sm-3 col-xs-12_ nopadding">
 							<a href="#">
 								<img src="assets/images/slides/home/layer-57.png" alt="" />
 							</a>
-							<h3>MAQUILLATE COMO UNA PROFESIONAL</h3>
+							<h3>MAQUILLATE COMO UNA PROFESIONAL 4</h3>
 						</div>
-						<div class="col-md-3 nopadding">
+						<div class="col-md-3 col-sm-3 col-xs-12_ nopadding">
 							<a href="#">
 								<img src="assets/images/slides/home/layer-57.png" alt="" />
 							</a>
-							<h3>MAQUILLATE COMO UNA PROFESIONAL</h3>
+							<h3>MAQUILLATE COMO UNA PROFESIONAL 5</h3>
 						</div>
 					</div>
 				</div>
 
-				<div class="banner-instagram">
-					<div class="">
-						<p class="title-instagram">Ésika Instagram</p>
-						<img class="img-responsive img100" src="assets/images/slides/home/instagram.png" />
-						<!-- <ul>
-							<li><img src=""/></li>
-							<li><img src=""/></li>
-							<li><img src=""/></li>
-						</ul> -->
+				<div class="footer-instagram clearfix">
+					<p class="title-instagram">Ésika Instagram</p>
+					<div class="image-list-instagram">
+						<!-- <img class="img-responsive img100" src="assets/images/slides/home/instagram.png" /> -->
+						<ul>
+							<li><img class="img-responsive" src="assets/images/image-instagram.jpg"/></li>
+							<li><img class="img-responsive" src="assets/images/image-instagram.jpg"/></li>
+							<li><img class="img-responsive" src="assets/images/image-instagram.jpg"/></li>
+							<li><img class="img-responsive" src="assets/images/image-instagram.jpg"/></li>
+							<li class="hidden-xs"><img src="assets/images/image-instagram.jpg"/></li>
+							<li class="hidden-xs"class="hidden-xs"><img src="assets/images/image-instagram.jpg"/></li>
+							<li class="hidden-xs"><img src="assets/images/image-instagram.jpg"/></li>
+							<li class="hidden-xs"><img src="assets/images/image-instagram.jpg"/></li>
+							<li class="hidden-xs"><img src="assets/images/image-instagram.jpg"/></li>
+							<li class="hidden-xs"><img src="assets/images/image-instagram.jpg"/></li>
+							<li class="hidden-xs"><img src="assets/images/image-instagram.jpg"/></li>
+							<li class="hidden-xs"><img src="assets/images/image-instagram.jpg"/></li>
+							<li class="hidden-xs"><img src="assets/images/image-instagram.jpg"/></li>
+							<li class="hidden-xs"><img src="assets/images/image-instagram.jpg"/></li>
+
+						</ul>
 					</div>
 				</div>
 
@@ -283,17 +296,66 @@
 					</div>
 				</div>
 			</div>
-
 		</footer>
-
-
-
 	</div>
-
-
 
 	<link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
 	<link rel="stylesheet" href="assets/css/app.css">
 	<script type="text/javascript" src="assets/js/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript">
+	var currentIndex = 0,
+	  items = $('.slide-mobile div'),
+	  itemAmt = items.length;
+
+	function cycleItems() {
+	  var item = $('.slide-mobile div').eq(currentIndex);
+	  items.hide();
+	  item.fadeIn();
+	  item.css('display','inline-block');
+	}
+
+
+	// var autoSlide = setInterval(function() {
+	//   currentIndex += 1;
+	//   if (currentIndex > itemAmt - 1) {
+	//     currentIndex = 0;
+	//   }
+	//   cycleItems();
+	// }, 3000);
+
+	$('.next').click(function() {console.log('log next')
+	//   clearInterval(autoSlide);
+	  currentIndex += 1;
+	  if (currentIndex > itemAmt - 1) {
+	    currentIndex = 0;
+	  }
+	  cycleItems();
+	});
+
+	$('.prev').click(function() {console.log('log prev')
+	//   clearInterval(autoSlide);
+	  currentIndex -= 1;
+	  if (currentIndex < 0) {
+	    currentIndex = itemAmt - 1;
+	  }
+	  cycleItems();
+	});
+
+	// START SCRIPT
+	startCarousel();
+	$(window).resize(function(){
+		startCarousel();
+	});
+
+	function startCarousel(){
+		var viewportWidth = $("body").innerWidth();
+		var viewportHeight = $("body").innerHeight();
+		if (viewportWidth <= 480) {
+			cycleItems();
+		} else {
+			items.show();
+		}
+	}
+	</script>
 </body>
 </html>
