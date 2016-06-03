@@ -8,7 +8,23 @@
 <body>
 	<div class="wrapper ">
 		<header>
-			<div class="inner">
+			<!-- MenuMobile -->
+			<div class="inner header-menu-mobile">
+				<div class="pull-right">
+					<button type="button" id="button-menu" class="button button-menu" onclick="mostrarMenuMobile()">
+						<span class="text-menu"></span>
+						<span class="line line-top "></span>
+						<span class="line line-middle "></span>
+						<span class="line line-bottom "></span>
+					</button>
+				</div>
+				<div class="logo-mobile">
+					<a href="#" class="spt1 logo"></a>
+				</div>
+
+			</div><!-- EndMenuMobile -->
+
+			<div class="inner header-menu">
 				<div class="header-social clearfix">
 					<ul>
 						<li><a href="#" class="spt1 fbgray"></a></li>
@@ -20,7 +36,6 @@
 				<div class="header-logo">
 					<a href="#" class="spt1 logo"></a>
 				</div>
-
 				<nav class="clearfix">
 					<div class="header-menu">
 						<ul>
@@ -59,8 +74,8 @@
 			<div class="container-fluid bg-content">
 				<div class="inner featured-description">
 					<p class="category">Belleza</p>
-					<h2>TENDENCIA ABSOLUT CHIC</h2>
-					<p class="author">Escrito por <span rel="author">Ésika</span> <span class="spt1 lineVerticalBlackWhite"></span> Marzo 22, 2016</p>
+					<h2 class="big">TENDENCIA ABSOLUT CHIC</h2>
+					<p class="author">Escrito por <span rel="author">Ésika</span> <span class="spt1 lineVerticalBlackWhite"></span> <span class="date">Marzo 22, 2016</span></p>
 					<p class="mini-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cumt sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla onsequat mas quis enim. <span class="read-more">Leer más</span></p>
 
 					<div class="share-post">
@@ -73,139 +88,151 @@
 					</div>
 				</div>
 
-			<!-- more body -->
-			<div class="inner">
-				<div class="row nopadding">
-					<article class="col-md-6 featured-home-box-mini box-min-left">
-						<div class="">
-							<img src="assets/images/slides/home/layer-61.png" class="img-responsive img100" />
-						</div>
-						<div class="featured-description">
-							<p class="category">Belleza</p>
-							<h2>CAROLINA TE ENSEÑA A MAQUILLARTE PARA UNA OCASIÓN DE DÍA</h2>
-							<p class="author">Escrito por <span rel="author">Ésika</span> <span class="spt1 lineVerticalBlackWhite"></span> Marzo 22, 2016</p>
-							<p class="mini-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cumt sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla onsequat mas quis enim. <span class="read-more">Leer más</span></p>
-							<div class="share-post">
-								<ul class="list-inline">
-									<li><a href="#" class="spt1 fb"></a></li>
-									<li><a href="#" class="spt1 tw"></a></li>
-									<li><a href="#" class="spt1 pt"></a></li>
-									<li><a href="#" class="spt1 gplus"></a></li>
-								</ul>
+				<!-- more body -->
+				<div class="inner body-background-mobile">
+					<div class="row nopadding">
+						<article class="col-md-6 featured-home-box-mini box-min-left">
+							<div class="">
+								<img src="assets/images/slides/home/layer-61.png" class="img-responsive img100" />
 							</div>
-						</div>
-					</article>
-					<article class="col-md-6 featured-home-box-mini box-min-right">
-						<div class="">
-							<img src="assets/images/slides/home/layer-62.png" class="img-responsive img100" />
-						</div>
-						<div class="featured-description">
-							<p class="category">Belleza</p>
-							<h2>CAROLINA TE ENSEÑA A MAQUILLARTE PARA UNA OCASIÓN DE DÍA</h2>
-							<p class="author">Escrito por <span rel="author">Ésika</span> <span class="spt1 lineVerticalBlackWhite"></span> Marzo 22, 2016</p>
-							<p class="mini-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cumt sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla onsequat mas quis enim. <span class="read-more">Leer más</span></p>
-							<div class="share-post">
-								<ul class="list-inline">
-									<li><a href="#" class="spt1 fb"></a></li>
-									<li><a href="#" class="spt1 tw"></a></li>
-									<li><a href="#" class="spt1 pt"></a></li>
-									<li><a href="#" class="spt1 gplus"></a></li>
-								</ul>
+							<div class="featured-description">
+								<p class="category">Belleza</p>
+								<h2>CAROLINA TE ENSEÑA A MAQUILLARTE PARA UNA OCASIÓN DE DÍA</h2>
+								<p class="author">Escrito por <span rel="author">Ésika</span> <span class="spt1 lineVerticalBlackWhite"></span> <span class="date">Marzo 22, 2016</span></p>
+								<p class="mini-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cumt sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla onsequat mas quis enim. <span class="read-more">Leer más</span></p>
+								<div class="share-post">
+									<ul class="list-inline">
+										<li><a href="#" class="spt1 fb"></a></li>
+										<li><a href="#" class="spt1 tw"></a></li>
+										<li><a href="#" class="spt1 pt"></a></li>
+										<li><a href="#" class="spt1 gplus"></a></li>
+									</ul>
+								</div>
 							</div>
-						</div>
-					</article>
+						</article>
+						<article class="col-md-6 featured-home-box-mini box-min-right">
+							<div class="">
+								<img src="assets/images/slides/home/layer-62.png" class="img-responsive img100" />
+							</div>
+							<div class="featured-description">
+								<p class="category">Belleza</p>
+								<h2>CAROLINA TE ENSEÑA A MAQUILLARTE PARA UNA OCASIÓN DE DÍA</h2>
+								<p class="author">Escrito por <span rel="author">Ésika</span> <span class="spt1 lineVerticalBlackWhite"></span> <span class="date">Marzo 22, 2016</span></p>
+								<p class="mini-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cumt sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla onsequat mas quis enim. <span class="read-more">Leer más</span></p>
+								<div class="share-post">
+									<ul class="list-inline">
+										<li><a href="#" class="spt1 fb"></a></li>
+										<li><a href="#" class="spt1 tw"></a></li>
+										<li><a href="#" class="spt1 pt"></a></li>
+										<li><a href="#" class="spt1 gplus"></a></li>
+									</ul>
+								</div>
+							</div>
+						</article>
+					</div>
+
 				</div>
 
-				<div class="row nopadding">
-					<img src="assets/images/slides/home/layer-56.png" class="img-responsive" />
+				<div class="inner">
+					<div class="row nopadding">
+						<img src="assets/images/slides/home/layer-56.png" class="img-responsive" />
+					</div>
 				</div>
 
-				<div class="inner featured-description">
-					<p class="category">Belleza</p>
-					<h2>TENDENCIA ABSOLUT CHIC</h2>
-					<p class="author">Escrito por <span rel="author">Ésika</span> <span class="spt1 lineVerticalBlackWhite"></span> Marzo 22, 2016</p>
-					<p class="mini-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cumt sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla onsequat mas quis enim. <span class="read-more">Leer más</span></p>
+				<div class="inner">
+					<div class="inner featured-description">
+						<p class="category">Belleza</p>
+						<h2>TENDENCIA ABSOLUT CHIC</h2>
+						<p class="author">Escrito por <span rel="author">Ésika</span> <span class="spt1 lineVerticalBlackWhite"></span> <span class="date">Marzo 22, 2016</span></p>
+						<p class="mini-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cumt sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla onsequat mas quis enim. <span class="read-more">Leer más</span></p>
 
-					<div class="share-post">
-						<ul class="list-inline">
-							<li><a href="#" class="spt1 fb"></a></li>
-							<li><a href="#" class="spt1 tw"></a></li>
-							<li><a href="#" class="spt1 pt"></a></li>
-							<li><a href="#" class="spt1 gplus"></a></li>
-						</ul>
+						<div class="share-post">
+							<ul class="list-inline">
+								<li><a href="#" class="spt1 fb"></a></li>
+								<li><a href="#" class="spt1 tw"></a></li>
+								<li><a href="#" class="spt1 pt"></a></li>
+								<li><a href="#" class="spt1 gplus"></a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
-				<div class="row nopadding bg-white">
-					<article class="col-md-6 featured-home-box-mini box-min-left">
-						<div class="">
-							<img src="assets/images/slides/home/layer-61.png" class="img-responsive img100" />
-						</div>
-						<div class="featured-description">
-							<p class="category">Belleza</p>
-							<h2>CAROLINA TE ENSEÑA A MAQUILLARTE PARA UNA OCASIÓN DE DÍA</h2>
-							<p class="author">Escrito por <span rel="author">Ésika</span> <span class="spt1 lineVerticalBlackWhite"></span> Marzo 22, 2016</p>
-							<p class="mini-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cumt sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla onsequat mas quis enim. <span class="read-more">Leer más</span></p>
-							<div class="share-post">
-								<ul class="list-inline">
-									<li><a href="#" class="spt1 fb"></a></li>
-									<li><a href="#" class="spt1 tw"></a></li>
-									<li><a href="#" class="spt1 pt"></a></li>
-									<li><a href="#" class="spt1 gplus"></a></li>
-								</ul>
+
+				<div class="inner body-background-mobile">
+					<div class="row nopadding">
+						<article class="col-md-6 featured-home-box-mini box-min-left">
+							<div class="">
+								<img src="assets/images/slides/home/layer-61.png" class="img-responsive img100" />
 							</div>
-						</div>
-					</article>
-					<article class="col-md-6 featured-home-box-mini box-min-right">
-						<div class="">
-							<img src="assets/images/slides/home/layer-62.png" class="img-responsive img100" />
-						</div>
-						<div class="featured-description">
-							<p class="category">Belleza</p>
-							<h2>CAROLINA TE ENSEÑA A MAQUILLARTE PARA UNA OCASIÓN DE DÍA</h2>
-							<p class="author">Escrito por <span rel="author">Ésika</span> <span class="spt1 lineVerticalBlackWhite"></span> Marzo 22, 2016</p>
-							<p class="mini-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cumt sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla onsequat mas quis enim. <span class="read-more">Leer más</span></p>
-							<div class="share-post">
-								<ul class="list-inline">
-									<li><a href="#" class="spt1 fb"></a></li>
-									<li><a href="#" class="spt1 tw"></a></li>
-									<li><a href="#" class="spt1 pt"></a></li>
-									<li><a href="#" class="spt1 gplus"></a></li>
-								</ul>
+							<div class="featured-description">
+								<p class="category">Belleza</p>
+								<h2>CAROLINA TE ENSEÑA A MAQUILLARTE PARA UNA OCASIÓN DE DÍA</h2>
+								<p class="author">Escrito por <span rel="author">Ésika</span> <span class="spt1 lineVerticalBlackWhite"></span> <span class="date">Marzo 22, 2016</span></p>
+								<p class="mini-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cumt sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla onsequat mas quis enim. <span class="read-more">Leer más</span></p>
+								<div class="share-post">
+									<ul class="list-inline">
+										<li><a href="#" class="spt1 fb"></a></li>
+										<li><a href="#" class="spt1 tw"></a></li>
+										<li><a href="#" class="spt1 pt"></a></li>
+										<li><a href="#" class="spt1 gplus"></a></li>
+									</ul>
+								</div>
 							</div>
+						</article>
+						<article class="col-md-6 featured-home-box-mini box-min-right">
+							<div class="">
+								<img src="assets/images/slides/home/layer-62.png" class="img-responsive img100" />
+							</div>
+							<div class="featured-description">
+								<p class="category">Belleza</p>
+								<h2>CAROLINA TE ENSEÑA A MAQUILLARTE PARA UNA OCASIÓN DE DÍA</h2>
+								<p class="author">Escrito por <span rel="author">Ésika</span> <span class="spt1 lineVerticalBlackWhite"></span> <span class="date">Marzo 22, 2016</span></p>
+								<p class="mini-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cumt sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla onsequat mas quis enim. <span class="read-more">Leer más</span></p>
+								<div class="share-post">
+									<ul class="list-inline">
+										<li><a href="#" class="spt1 fb"></a></li>
+										<li><a href="#" class="spt1 tw"></a></li>
+										<li><a href="#" class="spt1 pt"></a></li>
+										<li><a href="#" class="spt1 gplus"></a></li>
+									</ul>
+								</div>
+							</div>
+						</article>
+					</div>
+					<div class="row paginator">
+						<div class="col-md-3 col-sm-3 nopadding col-xs-6">
+							<button type="button" class="btn-prev">ANTERIOR</button>
 						</div>
-					</article>
+						<div class="col-md-6 col-sm-6 counter hidden-xs">
+							<ul class="list-inline">
+								<li><a class="active" href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">6</a></li>
+								<li><a href="#">7</a></li>
+								<li>...</li>
+								<li><a href="#">100</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3 col-sm-3 nopadding col-xs-6">
+							<button type="button" class="btn-next">SIGUIENTE</button>
+						</div>
+					</div>
+
 				</div>
-				<div class="row paginator">
-					<div class="col-md-3 col-sm-3 nopadding">
-						<button type="button" class="btn-prev">ANTERIOR</button>
-					</div>
-					<div class="col-md-6 col-sm-6 counter">
-						<ul class="list-inline">
-							<li><a class="active" href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">4</a></li>
-							<li><a href="#">5</a></li>
-							<li><a href="#">6</a></li>
-							<li><a href="#">7</a></li>
-							<li>...</li>
-							<li><a href="#">100</a></li>
-						</ul>
-					</div>
-					<div class="col-md-3 col-sm-3 nopadding">
-						<button type="button" class="btn-next">SIGUIENTE</button>
-					</div>
-				</div>
-			</div>
 			</div>
 		</div>
 
 
 		<footer>
-			<div class="container-fluid footer-box-gray">
+			<div class="container-fluid footer-box-gray body-background-mobile">
 				<div class="inner most-view">
 					<h2>LOS MÁS VISTOS</h2>
-					<div class="row nopadding">
+					<div class="row nopadding slide-mobile">
+						<span class="next">Next</span>
+						<span class="prev">Previous</span>
+
 						<div class="col-md-3 nopadding">
 							<a href="#">
 								<img src="assets/images/slides/home/layer-57.png" alt="" />
@@ -242,7 +269,6 @@
 							<li><img src=""/></li>
 							<li><img src=""/></li>
 						</ul> -->
-
 					</div>
 				</div>
 

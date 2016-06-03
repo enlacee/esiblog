@@ -20,6 +20,18 @@ ul.list-inline li {
   display: inline; }
 
 /* reset bootstrap */
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover {
+  outline: 0px !important;
+  -webkit-appearance: none; }
+
 .container, .container-fluid {
   padding: 0;
   margin: 0; }
@@ -50,9 +62,6 @@ ul.list-inline li {
 .inner {
   max-width: 1003px;
   margin: 0 auto; }
-
-.bg-white {
-  background-color: white; }
 
 /**********************************************************
 * FONTS
@@ -257,7 +266,6 @@ nav .header-menu-find {
   padding: 0 0 0 9px; }
 
 .paginator {
-  background-color: white;
   padding: 4.5% 0 4.5% 0;
   margin: 0; }
   .paginator .counter {
@@ -277,7 +285,7 @@ nav .header-menu-find {
     .paginator .counter ul li a.active {
       color: black; }
   .paginator .btn-prev, .paginator .btn-next {
-    color: white;
+    color: #eaeaea;
     font-family: 'BentonSans-Medium';
     font-weight: 500;
     font-size: 12px;
@@ -295,6 +303,7 @@ nav .header-menu-find {
     float: left;
     margin: 2px 20px 0 0; }
   .paginator .btn-next {
+    color: white;
     background-color: black;
     float: right; }
   .paginator .btn-next::after {
@@ -377,6 +386,9 @@ nav .header-menu-find {
   top: 28px;
   font-weight: 600;
   color: black; }
+
+.slide-mobile .next, .slide-mobile .prev {
+  display: none; }
 
 /**********************************************************
 * SPRITES
@@ -472,7 +484,56 @@ nav .header-menu-find {
 /**********************************************************
 * MOBILE
 ***********************************************************/
-@media screen and (min-width: 780px) and (max-width: 1024px) {
+.header-menu-mobile {
+  position: relative;
+  height: 60px;
+  background: white;
+  display: none; }
+
+.button-menu {
+  border: 0px solid transparent;
+  display: block;
+  width: 43px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  margin-right: 1.5em;
+  margin-top: 0.4em;
+  z-index: 2; }
+  .button-menu .line {
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    position: relative;
+    margin-top: 9px; }
+  .button-menu .line-top {
+    display: block; }
+  .button-menu .line-middle {
+    display: block; }
+  .button-menu .line-bottom {
+    display: block; }
+
+.logo-mobile {
+  width: 100%;
+  text-align: center;
+  z-index: 1; }
+  .logo-mobile .spt1.logo {
+    background-size: 66%;
+    margin: 4px 0; }
+  .logo-mobile .logo-mobile .spt1.logo {
+    background-size: 66%;
+    margin: 4px 0;
+    height: 56px; }
+
+/**********************************************************
+* MOBILE RESPONSIVE
+***********************************************************/
+@media screen and (max-width: 1024px) {
+  .header-menu {
+    display: none; }
+  .header-menu-mobile {
+    display: block; }
   .wrapper {
     background: yellow; } }
 
@@ -482,4 +543,85 @@ nav .header-menu-find {
 
 @media screen and (max-width: 480px) {
   .wrapper {
-    background: blue; } }
+    background: white; }
+  .bg-content {
+    background-color: white;
+    background-image: initial; }
+  .featured-description p.mini-description {
+    padding: 0px 8%; }
+  /**
+	* Menu
+	*/
+  .logo-mobile {
+    position: absolute;
+    top: 13px; }
+  .header-menu-mobile {
+    height: 122px; }
+  .logo-mobile .spt1.logo {
+    background-size: initial; }
+  .button-menu {
+    margin-top: 2.6em; }
+    .button-menu .button-menu .line {
+      height: 5px; }
+  /*
+	* HEADER
+	*/
+  .featured-home-box .featured-image {
+    min-height: 402px; }
+  .featured-description p.category {
+    font-size: 40px; }
+  .featured-description h2 {
+    font-size: 20px; }
+  .featured-description h2.big {
+    font-size: 35px; }
+  .featured-description p.author {
+    font-size: 14px; }
+    .featured-description p.author .lineVerticalBlackWhite {
+      display: none; }
+    .featured-description p.author .date {
+      display: block; }
+  .featured-description p.mini-description {
+    line-height: 27px;
+    font-size: 15px; }
+  .featured-home-box-mini .featured-description h2 {
+    font-size: 16px; }
+  /*
+	* BODY
+	*/
+  .body-background-mobile {
+    background: #e3e3e3;
+    padding: 0 1.3em; }
+    .body-background-mobile .box-min-left, .body-background-mobile .box-min-right {
+      padding: 0; }
+  article.featured-home-box-mini {
+    background: white; }
+    article.featured-home-box-mini .featured-description div.share-post {
+      padding: 0 0 1.5em 0; }
+  .paginator .btn-next::after {
+    margin-left: 5px; }
+  .paginator .btn-prev::before {
+    margin-right: 5px; }
+  /*
+	* FOOTER
+	*/
+  .slide-mobile .next, .slide-mobile .prev {
+    display: block; }
+  /*
+	* sprites
+	*/
+  .spt1.fb {
+    background-position: 0px -158px;
+    height: 20px;
+    width: 24px; }
+  .spt1.tw {
+    background-position: -24px -158px;
+    height: 20px;
+    width: 24px; }
+  .spt1.pt {
+    background-position: -48px -158px;
+    height: 20px;
+    width: 24px; }
+  .spt1.gplus {
+    background-position: -72px -158px;
+    height: 20px;
+    width: 24px; } }
