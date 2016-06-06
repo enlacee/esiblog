@@ -152,14 +152,13 @@ nav .header-menu {
       font-weight: 600;
       color: black;
       text-decoration: none; }
-  nav .header-menu ul li.active {
+  nav .header-menu ul li a.active {
     content: '';
     height: 4px;
     margin-bottom: 20px;
     border-bottom: 4px solid red;
-    padding-bottom: 21px; }
-    nav .header-menu ul li.active a {
-      color: #999; }
+    padding-bottom: 21px;
+    color: #999; }
 
 nav .header-menu-find {
   display: block;
@@ -505,6 +504,26 @@ nav .header-menu-find {
   width: 13px;
   height: 23px; }
 
+.spt1.x-mobile {
+  background-size: 140px;
+  background-position: -109px -48px;
+  width: 16px;
+  height: 17px; }
+
+.border-dot-line {
+  background-image: url("../images/dot-line.png");
+  background-repeat: repeat-x;
+  height: 3px; }
+
+.button-arrow-right {
+  background: url("../images/sprite-esika.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-position: -217px -85px;
+  width: 7px;
+  height: 11px;
+  line-height: 13px; }
+
 /**********************************************************
 * MOBILE
 ***********************************************************/
@@ -560,6 +579,69 @@ nav .header-menu-find {
   position: absolute;
   right: 0;
   float: right; }
+
+/*
+* Menu mobile
+*/
+#menu-mobile {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 60px;
+  background: black;
+  color: #FFF;
+  width: 280px;
+  overflow: hidden;
+  z-index: 3;
+  bottom: 0;
+  padding-top: 22px;
+  /*
+	* body
+	*/ }
+  #menu-mobile .brand img {
+    height: 50px; }
+  #menu-mobile .brand-x {
+    text-align: right;
+    margin-top: 0px; }
+  #menu-mobile .mb-body {
+    padding: 0;
+    margin: 0 20px; }
+    #menu-mobile .mb-body ul {
+      list-style-type: none; }
+    #menu-mobile .mb-body ul li a {
+      font-family: 'BentonSans-Medium';
+      font-size: 14px;
+      color: white;
+      display: block;
+      padding-top: 13px;
+      padding-bottom: 13px;
+      text-decoration: none; }
+    #menu-mobile .mb-body ul li a:hover, #menu-mobile .mb-body ul li a.active:hover {
+      color: #999; }
+    #menu-mobile .mb-body ul li a.active {
+      color: #363636; }
+    #menu-mobile .mb-body form input[type=text] {
+      height: 50px;
+      background-color: transparent;
+      border: 0;
+      border-bottom: 1px solid #363636;
+      min-width: 169px;
+      color: white; }
+    #menu-mobile .mb-body form input::-webkit-input-placeholder,
+    #menu-mobile .mb-body form input:-moz-placeholder,
+    #menu-mobile .mb-body form input::-moz-placeholder,
+    #menu-mobile .mb-body form input:-ms-input-placeholder {
+      color: white; }
+    #menu-mobile .mb-body form button[type=submit] {
+      border: 0;
+      background-color: #363636;
+      height: 50px;
+      width: 55px; }
+  #menu-mobile .mb-social ul li {
+    display: block;
+    float: left;
+    margin: 0 10px; }
 
 /**********************************************************
 * MOBILE RESPONSIVE
@@ -639,6 +721,8 @@ nav .header-menu-find {
     margin-left: 5px; }
   .paginator .btn-prev::before {
     margin-right: 5px; }
+  .paginator .btn-prev, .paginator .btn-next {
+    padding: 10px 17px; }
   /*
 	* FOOTER
 	*/
