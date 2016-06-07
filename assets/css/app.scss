@@ -625,12 +625,19 @@ a#back-to-top {
 	border:1px solid white;
 
 }
+/***
+* category
+*/
+body.category .bg-content{
+	background-image: initial;
+}
 /**********************************************************
 * MOBILE
 ***********************************************************/
 .header-menu-mobile {
 	position: relative;
-	height: 60px;
+	// height: 60px;
+	height: auto;
 	// z-index: 99999;
 	background: white;
 	display: none;
@@ -669,25 +676,32 @@ a#back-to-top {
 	}
 }
 .logo-mobile{
-	text-align: center;
-	z-index: 1;
+	text-align: right;
 	float: left;
-	width: 100%;
+	padding: 10px 0 0 0;
+	width: 62%;
+	z-index: 1;
 	.spt1.logo{
-		background-size: 66%;
+		// background-size: 66%;
+		background-size: 140px;
 		margin: 4px 0;
+		background-position: 0px 0px;
+		height: 41px;
+		width: 140px;
+		padding: 0;
+		margin: 0;
 	}
 	.logo-mobile .spt1.logo{
-		background-size: 66%;
-		margin: 4px 0;
-		height: 56px;
+		// background-size: 66%;
+		// margin: 4px 0;
+		// height: 56px;
 	}
-	.logoHidden2{
-		display: none;
-		width: 60%;
-		float: right;
-		margin-right: 75px;
-	}
+	// .logoHidden2{
+	// 	display: none;
+	// 	width: 60%;
+	// 	float: right;
+	// 	margin-right: 75px;
+	// }
 }
 .logo-dot{
 	position: absolute;
@@ -816,15 +830,9 @@ a#back-to-top {
 	.logo-mobile{
 		position: absolute;
 		top: 13px;
-		.logoHidden2{
-			display: block;
-		}
-		.logoHidden1{
-			display: none;
-		}
 	}
 	.header-menu-mobile{
-		height: 88px;
+		height: 77px;
 
 	}
 	.logo-mobile .spt1.logo{
