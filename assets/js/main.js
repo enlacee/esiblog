@@ -59,10 +59,10 @@ function resizeFeacturedHome(){
 	// set home 100%
 	wW = $(window).width();
 	wH = $(window).height();
-
 	var headerSize = $('body header').height();
-	var newSize = wH - headerSize;
-	$('.featured-image').height(newSize);
+	var newSize = wH-headerSize;
+	$('.parallax-1').height(newSize);
+	// $('.featured-image').height(newSize);
 }
 
 
