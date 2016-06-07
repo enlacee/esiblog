@@ -210,7 +210,7 @@ nav .header-menu-find {
       font-style: italic;
       cursor: default;
       text-decoration: none; }
-  .featured-description p.mini-description {
+  .featured-description, .featured-description mini-description {
     padding: 0px 23%;
     line-height: 2.2em;
     color: black;
@@ -219,6 +219,9 @@ nav .header-menu-find {
   .featured-description div.share-post {
     margin-top: 27px;
     margin-bottom: 38px; }
+  .featured-description div.share-post-mypost {
+    margin: 0 10px 0 0;
+    padding: 0; }
 
 .read-more {
   color: #e81c36;
@@ -247,12 +250,12 @@ nav .header-menu-find {
     font-size: 18px;
     line-height: 24px;
     padding: 0 12%; }
-  .featured-home-box-mini .featured-description p.mini-description {
+  .featured-home-box-mini .featured-description, .featured-home-box-mini mini-description {
     padding: 0px 2%;
     text-align: justify; }
   .featured-home-box-mini .featured-description div.share-post {
     margin-bottom: 23px; }
-  .featured-home-box-mini .featured-description p.mini-description {
+  .featured-home-box-mini .featured-description, .featured-home-box-mini mini-description {
     font-size: 13px;
     padding: 0 5%; }
 
@@ -680,7 +683,7 @@ body.category .bg-content {
   .bg-content {
     background-color: white;
     background-image: initial; }
-  .featured-description p.mini-description {
+  .featured-description, mini-description {
     padding: 0px 8%; }
   /**
 	* Menu
@@ -711,7 +714,7 @@ body.category .bg-content {
       display: none; }
     .featured-description p.author .date {
       display: block; }
-  .featured-description p.mini-description {
+  .featured-description, .featured-description mini-description {
     line-height: 27px;
     font-size: 15px; }
   .featured-home-box-mini .featured-description h2 {

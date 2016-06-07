@@ -249,7 +249,7 @@ nav .header-menu-find{
 			text-decoration: none;
 		}
 	}
-	p.mini-description{
+	,mini-description{
 		padding: 0px 23%;
 		line-height: 2.2em;
 		color: black;
@@ -259,6 +259,10 @@ nav .header-menu-find{
 	div.share-post{
 		margin-top: 27px;
 		margin-bottom: 38px;
+	}
+	div.share-post-mypost{
+		margin: 0 10px 0 0;
+		padding: 0;
 	}
 }
 
@@ -296,14 +300,14 @@ nav .header-menu-find{
 		line-height: 24px;
 		padding: 0 12%;
 	}
-	.featured-description p.mini-description{
+	.featured-description ,mini-description{
 		padding: 0px 2%;
 		text-align: justify;
 	}
 	.featured-description div.share-post{
 		margin-bottom: 23px;
 	}
-	.featured-description p.mini-description{
+	.featured-description ,mini-description{
 		font-size: 13px;;
 		padding: 0 5%;
 	}
@@ -820,7 +824,7 @@ body.category .bg-content{
 		background-color: white;
 		background-image: initial;
 	}
-	.featured-description p.mini-description{
+	.featured-description ,mini-description{
 		padding: 0px 8%;
 	}
 
@@ -869,7 +873,7 @@ body.category .bg-content{
 				display: block;
 			}
 		}
-		p.mini-description {
+		,mini-description {
 			line-height: 27px;
 			font-size: 15px;
 		}
