@@ -692,7 +692,12 @@ body.post hr {
   .header-menu {
     display: none; }
   .header-menu-mobile {
-    display: block; } }
+    display: block; }
+  /***
+	* post
+	*/
+  body.post hr {
+    margin: 0; } }
 
 @media screen and (min-width: 480px) and (max-width: 780px) {
   /*
@@ -707,6 +712,11 @@ body.post hr {
     background-image: initial; }
   .featured-description, mini-description {
     padding: 0px 8%; }
+  /***
+	* post
+	*/
+  body.post .mini-description {
+    padding: 0; }
   /**
 	* Menu
 	*/

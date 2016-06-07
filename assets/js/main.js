@@ -1,10 +1,10 @@
 // 01:Slide Mobile
 var currentIndex = 0,
-  items = $('.slide-mobile div'),
+  items = $('.most-view .slide-mobile div'),
   itemAmt = items.length;
 
 function cycleItems() {
-  var item = $('.slide-mobile div').eq(currentIndex);
+  var item = $('.most-view .slide-mobile div').eq(currentIndex);
   items.hide();
   item.fadeIn();
   item.css('display','inline-block');
@@ -18,7 +18,7 @@ function cycleItems() {
 //   cycleItems();
 // }, 3000);
 
-$('.next').click(function() {
+$('.most-view .next').click(function() {
 //   clearInterval(autoSlide);
   currentIndex += 1;
   if (currentIndex > itemAmt - 1) {
@@ -27,7 +27,7 @@ $('.next').click(function() {
   cycleItems();
 });
 
-$('.prev').click(function() {
+$('.most-view .prev').click(function() {
 //   clearInterval(autoSlide);
   currentIndex -= 1;
   if (currentIndex < 0) {

@@ -828,6 +828,14 @@ body.post {
 	.header-menu-mobile{
 		display: block;
 	}
+	/***
+	* post
+	*/
+	body.post {
+		hr{
+			margin: 0
+		}
+	}
 }
 @media screen and(min-width: 780px) and (max-width: 1024px){
 
@@ -850,7 +858,13 @@ body.post {
 	.featured-description ,mini-description{
 		padding: 0px 8%;
 	}
-
+	/***
+	* post
+	*/
+	body.post .mini-description{
+		padding: 0
+	}
+	
 	/**
 	* Menu
 	*/
