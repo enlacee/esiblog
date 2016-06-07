@@ -62,7 +62,7 @@ function resizeFeacturedHome(){
 
 	var headerSize = $('body header').height();
 	var newSize = wH - headerSize;
-	$('.featured-home-box .featured-image').height(newSize);
+	$('.featured-image').height(newSize);
 }
 
 

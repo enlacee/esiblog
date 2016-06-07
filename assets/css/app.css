@@ -210,7 +210,7 @@ nav .header-menu-find {
       font-style: italic;
       cursor: default;
       text-decoration: none; }
-  .featured-description, .featured-description mini-description {
+  .featured-description .mini-description {
     padding: 0px 23%;
     line-height: 2.2em;
     color: black;
@@ -220,7 +220,7 @@ nav .header-menu-find {
     margin-top: 27px;
     margin-bottom: 38px; }
   .featured-description div.share-post-mypost {
-    margin: 0 10px 0 0;
+    margin: 0 0 10px 0;
     padding: 0; }
 
 .read-more {
@@ -250,7 +250,7 @@ nav .header-menu-find {
     font-size: 18px;
     line-height: 24px;
     padding: 0 12%; }
-  .featured-home-box-mini .featured-description, .featured-home-box-mini mini-description {
+  .featured-home-box-mini .featured-description .mini-description {
     padding: 0px 2%;
     text-align: justify; }
   .featured-home-box-mini .featured-description div.share-post {
@@ -356,19 +356,23 @@ nav .header-menu-find {
   font-weight: 300;
   padding: 50px 0 30px 0; }
 
-.most-view {
+.most-view,
+.most-view-related {
   padding: 1.5% 1% 0% 1%;
   text-align: center; }
-  .most-view ul li {
+  .most-view ul li,
+  .most-view-related ul li {
     display: block; }
-  .most-view h2 {
+  .most-view h2,
+  .most-view-related h2 {
     font-family: 'BentonSans';
     font-size: 14px;
     font-weight: bold;
     padding-left: 2.1%;
     text-align: left;
     color: black; }
-  .most-view h3 {
+  .most-view h3,
+  .most-view-related h3 {
     font-family: 'BentonSans';
     font-size: 13px;
     font-weight: bold;
@@ -379,6 +383,9 @@ nav .header-menu-find {
     color: black;
     max-width: 250px;
     height: 40px; }
+
+.post-comments {
+  padding: 1.5% 1% 0 2.4%; }
 
 .footer-instagram {
   width: 100%;
@@ -544,8 +551,23 @@ a#back-to-top {
 /***
 * category
 */
-body.category .bg-content {
+body.category .bg-content,
+body.post .bg-content {
   background-image: initial; }
+
+/***
+* post
+*/
+body.post .mini-description {
+  padding: 0px 11%; }
+
+body.post .most-view-related {
+  padding: 15px 0 15px 0; }
+
+body.post hr {
+  border-top: 1px solid #e0e0e0;
+  padding: 0;
+  margin: 0 10%; }
 
 /**********************************************************
 * MOBILE
