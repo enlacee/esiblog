@@ -272,12 +272,13 @@ nav .header-menu-find{
 .featured-home-box{
 	text-align: center;
 	.featured-image{
-		/*min-height: 600px;*/
+		position: relative;
+		// min-height: 600px;
 	}
 }
 .ico-arrow{
 	position: absolute;
-    margin-top: -100px;
+	bottom: 20px;
 }
 .bg-content{
 	background-image: url('../images/bg-content.jpg');
@@ -609,6 +610,21 @@ nav .header-menu-find{
 	height: 11px;
 	line-height: 13px;
 }
+a#back-to-top {
+	display: none;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+	background-image: url('../images/sprite-esika.png');
+	background-repeat: no-repeat;
+	background-position: -61px -97px;
+	width: 40px;
+	height: 40px;
+	border:1px solid white;
+
+}
 /**********************************************************
 * MOBILE
 ***********************************************************/
@@ -826,9 +842,6 @@ nav .header-menu-find{
 	/*
 	* HEADER
 	*/
-	.featured-home-box .featured-image{
-		min-height: 402px;
-	}
 	.featured-description{
 		p.category{
 			font-size:40px;

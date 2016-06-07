@@ -122,15 +122,15 @@
 			<div class="featured-home-box">
 				<div class="featured-image parallax parallax-1">
 					<!-- <img src="assets/images/slides/home/home.png" class="img-responsive" /> -->
-					<!-- <a href="#">
+					<a href="#content">
 						<span class="spt1 homeArrow ico-arrow">&nbsp;</span>
-					</a> -->
+					</a>
 				</div>
 
 
 			</div>
 
-			<div class="container-fluid bg-content">
+			<div class="container-fluid bg-content" id="content">
 				<div class="inner featured-description">
 					<p class="category">Belleza</p>
 					<h2 class="big">TENDENCIA ABSOLUT CHIC</h2>
@@ -353,13 +353,13 @@
 				</p>
 			</div>
 		</footer>
-
+		<a href="#" id="back-to-top" title="Back to top">&uarr;</a>
 	</div>
-
 	<link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
 	<link rel="stylesheet" href="assets/css/app.css">
 	<script type="text/javascript" src="assets/js/jquery-2.2.4.min.js"></script>
 	<script type="text/javascript">
+	// 01:Slide Mobile
 	var currentIndex = 0,
 	  items = $('.slide-mobile div'),
 	  itemAmt = items.length;
@@ -397,13 +397,6 @@
 	  }
 	  cycleItems();
 	});
-
-	// START SCRIPT
-	startCarousel();
-	$(window).resize(function(){
-		startCarousel();
-	});
-
 	function startCarousel(){
 		var viewportWidth = $("body").innerWidth();
 		var viewportHeight = $("body").innerHeight();
@@ -414,17 +407,67 @@
 		}
 	}
 
+	// START SCRIPT RESIZE
+	var wW, wH;
+	startCarousel();
+	resizeFeacturedHome();
+	$(window).resize(function(){
+		startCarousel();
+		resizeFeacturedHome();
 
-	// ACTIONS
+	});
+
+	function resizeFeacturedHome(){
+		// set home 100%
+		wW = $(window).width();
+		wH = $(window).height();
+
+		var headerSize = $('body header').height();
+		var newSize = wH - headerSize;
+		$('.featured-home-box .featured-image').height(newSize);
+
+	}
+
+
+
+
+	// start jquery
 	$(document).ready(function(){
+		// 02:Menu Mobile
 		// open menu RESPONSIVE
-		$('#button-menu').click(function(){
+		$('#button-menu').click(function(e){
+			e.preventDefault();
 			$('#menu-mobile').toggle();
 		});
 
-		$('#menu-mobile-close').click(function(){
+		$('#menu-mobile-close').click(function(e){
+			e.preventDefault();
 			$('#menu-mobile').hide();
 		});
+
+		// 03:BACK TOP
+		if ($('#back-to-top').length) {
+			var scrollTrigger = 100, // px
+			backToTop = function () {
+				var scrollTop = $(window).scrollTop();
+				if (scrollTop > scrollTrigger) {
+					$('#back-to-top').fadeIn();
+				} else {
+					$('#back-to-top').fadeOut();
+				}
+			};
+			backToTop();
+			$(window).on('scroll', function () {
+				backToTop();
+			});
+			$('#back-to-top').on('click', function (e) {
+				e.preventDefault();
+				$('html,body').animate({
+					scrollTop: 0
+				}, 700);
+			});
+		}
+
 
 	});
 	</script>
