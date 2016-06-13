@@ -237,7 +237,8 @@ nav .header-menu-find {
 
 .ico-arrow {
   position: absolute;
-  bottom: 20px; }
+  bottom: 20px;
+  left: 40.89%; }
 
 .bg-content {
   background-image: url("../images/bg-content.jpg");
@@ -710,7 +711,7 @@ body.post hr {
   .bg-content {
     background-color: white;
     background-image: initial; }
-  .featured-description, mini-description {
+  .featured-description .mini-description {
     padding: 0px 8%; }
   /***
 	* post
@@ -856,3 +857,11 @@ body.post hr {
     background-position: -72px -158px;
     height: 20px;
     width: 24px; } }
+
+@media screen and (max-width: 320px) {
+  /*
+	* FOOTER
+	*/
+  .slide-mobile .next, .slide-mobile .prev {
+    padding: 10px 14px;
+    top: 23%; } }
