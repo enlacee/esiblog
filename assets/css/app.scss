@@ -283,7 +283,6 @@ nav .header-menu-find{
 .ico-arrow{
 	position: absolute;
 	bottom: 20px;
-	left: 40.89%;
 }
 .bg-content{
 	background-image: url('../images/bg-content.jpg');
@@ -459,8 +458,69 @@ nav .header-menu-find{
 		height: 40px;
 	}
 }
+// .post-comments > .row{
+// 	margin-bottom: 17px;
+// }
 .post-comments{
-	padding: 1.5% 1% 0 2.4%;
+	width: 622px;
+	padding: 0;
+	border: 1px solid yellow;
+	.row.header{
+		margin-top: 33px;
+		margin-bottom: 17px;;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	h3{
+		font-size: 14px;
+		font-weight: bold;
+		margin: 0;
+		padding: 0;
+	}
+	.row{
+		padding: 0;
+		margin: 0;
+	}
+	.btn-coment{
+		background-color:white;
+		border:1px solid black;
+		padding:12px 22px;
+		font-family: 'BentonSans';
+	}
+	.comment-description{
+		border: 1px solid #a2a2a2;
+		padding: 26px 18px;
+	}
+	.comment-description-tip{
+		background-image: url('../images/sprite-esika.png');
+		background-repeat: no-repeat;
+		display: inline-block;
+
+		background-position: -254px -97px;
+		height: 20px;
+		width: 11px;
+
+		position: absolute;
+		left:-10px;
+	}
+	.user-comment{
+		.title{
+			font-weight: bold;
+			text-decoration:none;
+			color:black;
+			border-bottom: 1px solid black;
+		}
+		.header{
+			padding: 7px 0;
+		}
+		.comment-this-message{
+			text-decoration:none;
+			font-weight: normal;
+			font-size: 14px;
+			color:#666;
+			border-bottom: 1px solid #666;
+		}
+	}
 }
 .footer-instagram{
 	width: 100%;
@@ -650,7 +710,7 @@ body.post .mini-description{
 body.post .most-view-related{
 	// border-top: 1px solid #e0e0e0;
 	// border-bottom: 1px solid #e0e0e0;
-	padding: 15px 0 15px 0;
+	padding: 11px 0 11px 0;
 }
 body.post {
 	hr{
@@ -925,6 +985,9 @@ body.post {
 			}
 
 		}
+	}
+	.ico-arrow{
+		left: 40.89%;
 	}
 	/*
 	* BODY
