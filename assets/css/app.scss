@@ -293,6 +293,12 @@ nav .header-menu-find{
 	// background-repeat: no-repeat, no-repeat, no-repeat;
 	// background-position: 0 top, 0 top, 0 top;
 }
+.bg-white{
+	background-color: white;
+}
+.bg-black{
+	background-color: black;
+}
 .featured-home-box-mini{
 	text-align: center;
 	h2{
@@ -461,6 +467,7 @@ nav .header-menu-find{
 .most-view-related{
 	h3{
 		min-width: 250px;
+		font-weight: bold;
 	}
 }
 
@@ -545,10 +552,11 @@ nav .header-menu-find{
 		width: 100%;
 		height: 70px;
 		margin-top: 1.3em;
+		border: 1px solid #c2c2c2;
 	}
 	.btn-comment-submit{
 		font-family: 'BentonSans';
-		font-weight: 500;
+		font-weight: bold;
 		background: black;
 		color: white;
 		font-size: 10px;
@@ -1031,6 +1039,47 @@ body.post {
 	}
 	body.post .featured-description{
 		// margin: 10px;
+	}
+	.post-comments{
+		h3{
+			font-size: 1.15em;
+			padding-left: 0.7em;
+		}
+		.row.header{
+			margin: 1em 0;
+		}
+		.comment-description{
+			border: none;
+			padding: 0;
+			padding-top: 1.1em;
+			padding-bottom: 0.5em;
+		}
+	}
+	.user-comment{
+		background-color: white;
+		margin-bottom: 1.2em;
+		padding: 1.1em;
+		.row.header, .row{
+			background-color: white;
+		}
+		.row.header{
+			position: absolute;
+			margin: 0;
+			left: 7em;
+		}
+	}
+	.container-coments{
+		background-color: #f0f0f0;
+	}
+	.box-comment{
+		textarea{
+			margin-top: 0.7em;
+			height: 100px;
+		}
+		.btn-comment-submit{
+			width: 100%;
+			font-size: 1em;
+		}
 	}
 	/**
 	* Menu
