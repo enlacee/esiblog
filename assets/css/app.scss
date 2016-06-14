@@ -458,12 +458,16 @@ nav .header-menu-find{
 		height: 40px;
 	}
 }
-// .post-comments > .row{
-// 	margin-bottom: 17px;
-// }
+.most-view-related{
+	h3{
+		min-width: 250px;
+	}
+}
+
 .post-comments{
-	width: 622px;
+	max-width: 622px;
 	padding: 0;
+	margin: 0 0 3em 0;
 	border: 1px solid yellow;
 	.row.header{
 		margin-top: 33px;
@@ -482,10 +486,17 @@ nav .header-menu-find{
 		margin: 0;
 	}
 	.btn-coment{
+		font-family: 'BentonSans';
+		font-size: 10px;
+		font-weight: bold;
+		line-height: 10px;
 		background-color:white;
 		border:1px solid black;
-		padding:12px 22px;
-		font-family: 'BentonSans';
+		// padding:12px 22px;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-top: 17px;
+		padding-bottom: 15px;
 	}
 	.comment-description{
 		border: 1px solid #a2a2a2;
@@ -506,6 +517,7 @@ nav .header-menu-find{
 	.user-comment{
 		.title{
 			font-weight: bold;
+			font-size: 0.875em;
 			text-decoration:none;
 			color:black;
 			border-bottom: 1px solid black;
@@ -516,11 +528,50 @@ nav .header-menu-find{
 		.comment-this-message{
 			text-decoration:none;
 			font-weight: normal;
-			font-size: 14px;
+			font-size: 0.875em;
 			color:#666;
 			border-bottom: 1px solid #666;
 		}
 	}
+}
+.box-comment{
+	margin:2em 0 0 0;
+	h3{
+		font-size: 0.875em;
+		font-family: 'BentonSans';
+		color:black;
+	}
+	textarea{
+		width: 100%;
+		height: 70px;
+		margin-top: 1.3em;
+	}
+	.btn-comment-submit{
+		font-family: 'BentonSans';
+		font-weight: 500;
+		background: black;
+		color: white;
+		font-size: 10px;
+		line-height: 10px;
+		height: 40px;
+		border: none;
+		padding-left: 37px;
+		padding-right: 37px;
+		margin-top: 16px;
+	}
+}
+.container-input-100{
+	width: 89.1%;
+	input{
+		width: 100%;
+		height: 32px;
+		border: 1px solid #ccc;
+		padding-left: 4px;
+		margin-bottom: 5px;
+	}
+}
+.container-avatar{
+	width: 10%;
 }
 .footer-instagram{
 	width: 100%;
@@ -664,11 +715,62 @@ nav .header-menu-find{
 	// width: 33px;
 	// height: 34px;
 }
+.spt1.xclose{
+	background-position: -265px -97px;
+	height: 14px;
+	width: 14px;
+}
+// .spt1.box-login-fb{
+// 	background-size: 140px;
+// 	background-position: -240px -132px;
+// 	height: 44px;
+// 	width: 44px;
+// }
+// .spt1.box-login-tw{
+// 	background-position: -196px -132px;
+// 	height: 44px;
+// 	width: 44px;
+// }
+// .spt1.box-login-gplus{
+// 	background-position: -152px -132px;
+// 	height: 44px;
+// 	width: 44px;
+// }
+/* icon image : login social */
+.spt1.box-login-fb-min{
+	// background-size: 202px;
+	// background-position: -172px -94px;
+	// height: 32px;
+	// width: 32px;
+	background-size: 130px;
+	background-position: -110px -60px;
+	height: 20px;
+	width: 20px;
+}
+.spt1.box-login-tw-min{
+	// background-size: 202px;
+	// background-position: -140px -94px;
+	// height: 32px;
+	// width: 32px;
+	background-size: 130px;
+	background-position: -90px -60px;
+	height: 20px;
+	width: 20px;
+}
+.spt1.box-login-gplus-min{
+	// background-size: 202px;
+	// background-position: -108px -94px;
+	// height: 32px;
+	// width: 32px;
+	background-size: 130px;
+	background-position: -70px -60px;
+	height: 20px;
+	width: 20px;
+}
 .border-dot-line{
 	background-image: url('../images/dot-line.png');
 	background-repeat: repeat-x;
 	height: 3px;
-	// margin-top: 14px;
 }
 .button-arrow-right{
 	background: url("../images/sprite-esika.png");
@@ -705,7 +807,7 @@ body.post .bg-content{
 * post
 */
 body.post .mini-description{
-	padding: 0px 11%;
+	// padding: 0px 11%;
 }
 body.post .most-view-related{
 	// border-top: 1px solid #e0e0e0;
@@ -925,9 +1027,11 @@ body.post {
 	* post
 	*/
 	body.post .mini-description{
-		padding: 0
+		// padding: 0
 	}
-
+	body.post .featured-description{
+		// margin: 10px;
+	}
 	/**
 	* Menu
 	*/
@@ -973,7 +1077,7 @@ body.post {
 				display: block;
 			}
 		}
-		,mini-description {
+		.mini-description {
 			line-height: 27px;
 			font-size: 15px;
 		}
@@ -993,7 +1097,7 @@ body.post {
 	* BODY
 	*/
 	.body-background-mobile{
-		background: #e3e3e3;
+		/* background: #e3e3e3;*/
 		padding: 0 1.3em;
 
 		.box-min-left, .box-min-right{
@@ -1023,7 +1127,7 @@ body.post {
 	.slide-mobile{
 		text-align: center;
 		position: relative;
-		div{
+		div.frame{
 			display: inline-block;
 			width: 100%;
 			img{

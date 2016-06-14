@@ -1,10 +1,10 @@
 // 01:Slide Mobile
 var currentIndex = 0,
-  items = $('.most-view .slide-mobile div'),
+  items = $('.most-view .slide-mobile div.frame'),
   itemAmt = items.length;
 
 function cycleItems() {
-  var item = $('.most-view .slide-mobile div').eq(currentIndex);
+  var item = $('.most-view .slide-mobile div.frame').eq(currentIndex);
   items.hide();
   item.fadeIn();
   item.css('display','inline-block');
