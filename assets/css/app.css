@@ -398,7 +398,7 @@ nav .header-menu-find {
   max-width: 622px;
   padding: 0;
   margin: 0 0 3em 0;
-  border: 1px solid yellow; }
+  /* border: 0px solid yellow;*/ }
   .post-comments .row.header {
     margin-top: 33px;
     margin-bottom: 17px;
@@ -862,7 +862,8 @@ body.post hr {
     height: 100px; }
   .box-comment .btn-comment-submit {
     width: 100%;
-    font-size: 1em; }
+    font-size: 1em;
+    margin-bottom: 1.1em; }
   /**
 	* Menu
 	*/
