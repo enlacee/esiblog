@@ -227,6 +227,10 @@ nav .header-menu-find {
   color: #e81c36;
   font-weight: bold; }
 
+.margin-button-6 {
+  padding: 0;
+  margin: 0; }
+
 /**********************************************************
 * BODY
 ***********************************************************/
@@ -449,6 +453,9 @@ nav .header-menu-find {
     font-size: 0.875em;
     color: #666;
     border-bottom: 1px solid #666; }
+  .post-comments .user-comment .comment-box2 {
+    position: relative;
+    width: 87%; }
 
 .box-comment {
   margin: 2em 0 0 0; }
@@ -848,16 +855,23 @@ body.post hr {
     padding: 0;
     padding-top: 1.1em;
     padding-bottom: 0.5em; }
-  .user-comment {
+  .post-comments .user-comment {
     background-color: white;
     margin-bottom: 1.2em;
     padding: 1.1em; }
-    .user-comment .row.header, .user-comment .row {
+    .post-comments .user-comment .row.header, .post-comments .user-comment .row {
       background-color: white; }
-    .user-comment .row.header {
+    .post-comments .user-comment .row.header {
       position: absolute;
       margin: 0;
-      left: 7em; }
+      left: 7.6em; }
+    .post-comments .user-comment .title {
+      font-size: 1.1em; }
+    .post-comments .user-comment .comment-this-message {
+      font-size: 1.1em; }
+    .post-comments .user-comment .comment-box2 {
+      position: relative;
+      width: 100%; }
   .container-coments {
     background-color: #f0f0f0; }
   .box-comment textarea {
@@ -867,6 +881,10 @@ body.post hr {
     width: 100%;
     font-size: 1em;
     margin-bottom: 1.1em; }
+  .margin-button-6 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 6px; }
   /**
 	* Menu
 	*/
@@ -1007,7 +1025,22 @@ body.post hr {
   .spt1.gplus {
     background-position: -72px -158px;
     height: 20px;
-    width: 24px; } }
+    width: 24px; }
+  .spt1.box-login-fb-min {
+    background-size: 205px;
+    background-position: -174px -95px;
+    height: 32px;
+    width: 32px; }
+  .spt1.box-login-tw-min {
+    background-size: 205px;
+    background-position: -142px -95px;
+    height: 32px;
+    width: 32px; }
+  .spt1.box-login-gplus-min {
+    background-size: 205px;
+    background-position: -109px -95px;
+    height: 32px;
+    width: 32px; } }
 
 @media screen and (max-width: 320px) {
   /*
