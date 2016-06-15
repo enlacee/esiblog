@@ -472,6 +472,8 @@ nav .header-menu-find {
     border: none;
     padding-left: 37px;
     padding-right: 37px;
+    padding-top: 18px;
+    padding-bottom: 15px;
     margin-top: 16px; }
 
 .container-input-100 {
@@ -687,7 +689,7 @@ body.post .most-view-related {
 body.post hr {
   border-top: 1px solid #e0e0e0;
   padding: 0;
-  margin: 0 1%; }
+  margin: 0 10%; }
 
 /**********************************************************
 * MOBILE
@@ -812,12 +814,7 @@ body.post hr {
   .header-menu {
     display: none; }
   .header-menu-mobile {
-    display: block; }
-  /***
-	* post
-	*/
-  body.post hr {
-    margin: 0; } }
+    display: block; } }
 
 @media screen and (min-width: 480px) and (max-width: 780px) {
   /*
@@ -835,6 +832,12 @@ body.post hr {
   /***
 	* post
 	*/
+  /***
+	* post
+	*/
+  body.post hr {
+    border-top: 2px solid #e0e0e0;
+    margin: 0 3%; }
   .post-comments h3 {
     font-size: 1.15em;
     padding-left: 0.7em; }

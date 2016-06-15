@@ -565,6 +565,8 @@ nav .header-menu-find{
 		border: none;
 		padding-left: 37px;
 		padding-right: 37px;
+		padding-top: 18px;
+		padding-bottom: 15px;
 		margin-top: 16px;
 	}
 }
@@ -826,7 +828,7 @@ body.post {
 	hr{
 		border-top: 1px solid #e0e0e0;
 		padding: 0;
-	    margin: 0 1%;
+		margin: 0 10%;
 	}
 }
 /**********************************************************
@@ -999,14 +1001,6 @@ body.post {
 	.header-menu-mobile{
 		display: block;
 	}
-	/***
-	* post
-	*/
-	body.post {
-		hr{
-			margin: 0
-		}
-	}
 }
 @media screen and(min-width: 780px) and (max-width: 1024px){
 
@@ -1039,6 +1033,15 @@ body.post {
 	}
 	body.post .featured-description{
 		// margin: 10px;
+	}
+	/***
+	* post
+	*/
+	body.post {
+		hr{
+			border-top: 2px solid #e0e0e0;
+			margin: 0 3%;
+		}
 	}
 	.post-comments{
 		h3{
