@@ -881,10 +881,18 @@ body.post hr {
     width: 100%;
     font-size: 1em;
     margin-bottom: 1.1em; }
+  .box-comment .box-login-social {
+    margin: 10px 0; }
   .margin-button-6 {
     padding: 0;
     margin: 0;
     margin-bottom: 6px; }
+  .container-input-100 {
+    width: 84%; }
+    .container-input-100 input {
+      background-color: #f0f0f0; }
+  .container-avatar {
+    width: 14%; }
   /**
 	* Menu
 	*/
